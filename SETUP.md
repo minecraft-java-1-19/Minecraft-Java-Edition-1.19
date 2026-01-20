@@ -1,48 +1,57 @@
-# Setup Instructions for Running Minecraft Java Edition 1.19.4 in the Browser using CheerpJ 4.2
-
-This document provides comprehensive setup instructions for running Minecraft Java Edition 1.19.4 in your browser using CheerpJ 4.2.
+# Minecraft Java Edition 1.19.4 Setup Instructions using CheerpJ 4.2
 
 ## Prerequisites
-- **Java Runtime Environment (JRE) 8 or later**: Ensure you have the JRE installed on your machine.
-- **Latest version of a compatible web browser**: Recommended browsers include Chrome, Firefox, or Edge.
+- **Supported Browsers**: Ensure you have one of the following browsers:
+  - Google Chrome
+  - Mozilla Firefox
+  - Microsoft Edge
+
+- **Java Runtime Environment (JRE)**: Install the latest version of JRE (Java SE 8 or higher).
+
 - **CheerpJ 4.2**: Download and install CheerpJ from the official website.
 
-## Step-by-Step Guide
-1. **Download Minecraft Java Edition**: 
-   - Purchase and download Minecraft Java Edition from the official Minecraft website.
- 
-2. **Install CheerpJ**:
-   - Follow the installation instructions provided on the CheerpJ website to install the tool on your system.
+## Legal Notice
+Minecraft is a registered trademark of Mojang Studios. CheerpJ is a product of Leaning Technologies.
 
-3. **Set up CheerpJ**:
-   - Launch CheerpJ and navigate to the settings.
-   - Select the directory where Minecraft is installed.
+## Step-by-Step Setup
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/[your-username]/Minecraft-Java-Edition-1.19.git
+   cd Minecraft-Java-Edition-1.19
+   ```
 
-4. **Convert Minecraft with CheerpJ**:
-   - Use CheerpJ to convert the Minecraft Java .jar files to JavaScript. This process allows Minecraft to run in the browser.
+2. **Download and install CheerpJ**:
+   - Follow the instructions on the CheerpJ website to install.
 
-5. **Run Minecraft in the browser**:
-   - Open your web browser and navigate to the local server address provided by CheerpJ.
-   - Follow any additional prompts to start Minecraft.
+3. **Configure CheerpJ with Minecraft files**:
+   - Copy your Minecraft server files into the directory specified by CheerpJ.
 
-6. **Login**:
-   - Enter your Minecraft credentials to access your account and start playing.
+4. **Run Minecraft in the browser**:
+   - Launch CheerpJ and navigate to the start page.
+   - Choose the Minecraft application to start playing in your browser.
 
-## Important Notes about Performance and Limitations
-- **Performance**: Running Minecraft in a browser may lead to performance issues compared to running it natively. Ensure that your system meets the recommended specifications for optimal performance.
-- **Limitations**: Some features may not work as intended in the browser version. Multiplayer capabilities may also be limited depending on server settings.
+## Performance Expectations
+- **Minimum Requirements**:
+  - CPU: Dual-core 2.5 GHz or better
+  - RAM: 2 GB
 
-## Troubleshooting Section
-- **If Minecraft fails to load**: Check to ensure that all prerequisites are installed correctly and that you are using a supported web browser.
-- **Performance issues**: Try closing other browser tabs or applications that may be using system resources.
-- **CheerpJ errors**: Review the CheerpJ documentation for specific error messages and solutions.
+- **Expected Performance Benchmarks**:
+  - Frame rates of 30+ on medium settings in browser mode.
+
+## Limitations
+- Some graphical features may be limited due to browser capabilities.
+- Multiplayer functionality might face latency issues.
+
+## Troubleshooting
+- **Issue**: Game crashes on startup.
+  - **Solution**: Ensure JRE is properly installed and updated.
+
+- **Issue**: Performance is laggy.
+  - **Solution**: Try lowering graphics settings or closing background applications.
 
 ## File Structure
-- **/minecraft/**: Contains the main Minecraft application files.
-- **/cheerpj/**: Contains CheerpJ related files and configurations.
+- `src/`: Contains source code for CheerpJ modified Minecraft.
+- `assets/`: Game assets, including textures and models.
+- `libs/`: Library files required for running the game.
 
-## Support Resources
-- [Minecraft Official Support](https://support.minecraft.net)
-- [CheerpJ Official Documentation](https://www.leaningtech.com/cheerpj/docs/)
-- [Minecraft Community Forums](https://www.minecraftforum.net/)
-- [CheerpJ Community Support](https://www.leaningtech.com/cheerpj/support)
+For more questions, refer to the CheerpJ documentation or community support.
