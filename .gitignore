@@ -1,0 +1,8 @@
+# Compiled class files
+*.class
+
+# JAR files
+*.jar
+
+# Other binary files
+*.bin
