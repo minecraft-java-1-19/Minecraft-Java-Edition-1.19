@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minecraft Java Edition Loader</title>
+    <script src="https://cdn.jsdelivr.net/gh/cheerpj/cheerpj.js"></script>
+    <script>
+        function launchMinecraft() {
+            // Setup CheerpJ loader
+            const options = {
+                output: 'minecraft-output',
+                // Add additional options here if needed
+            };
+            cheerpj.load('MinecraftLauncher.class', options);
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Minecraft Java Edition!</h1>
+    <button onclick="launchMinecraft()">Launch Minecraft</button>
+    <div id="minecraft-output"></div>
+</body>
+</html>
